@@ -10,8 +10,7 @@ def calculo(monto):
 def calculo_venta(buyer_price, quantity):
     buyer_price = float(buyer_price)
     quantity = float(quantity)
-    whit_tax = calculo(quantity)
-    total = round (whit_tax * buyer_price, 2)
+    total = round(quantity * buyer_price, 2)
     return total
 
 
