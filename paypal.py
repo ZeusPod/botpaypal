@@ -14,4 +14,3 @@ def calculo_venta(buyer_price, quantity):
     return total
 
 
-    

@@ -21,8 +21,14 @@ class Dolartoday():
             data = json.load(file)
 
         precio = data['USD']['dolartoday']
-        mensualidad = round(7 * precio, 2)
+        precioComision = round(precio * 0.05 + precio , 2)
+        mensualidad = round(7 * precioComision, 2)
         
-        mensaje = 'El precio del dolar en Venezuela segun DolarToday es de: {} y el monto de la mensualidad sera de {} '.format(precio, mensualidad)
+       
+
+
+        mensaje = 'El precio promedio del dolar en Venezuela es de: {} bs y el monto de la mensualidad sera de {} bs '.format(precioComision, mensualidad) 
 
         return mensaje
+
+
